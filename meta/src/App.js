@@ -1,10 +1,25 @@
 
 import './App.css';
+import { Route,Routes } from 'react-router-dom';
+import Homepage from './home';
+import About from './about';
+import Menu from './menu';
+import Reservations from './reservation';
+import Order from './order';
+import Login from './login';
+
 
 function App() {
   return (
     <div className="App">
-      <h2>meta frontend</h2>
+      <Routes>
+        <Route path="/" element={<Homepage/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/menu' element={<Menu/>}/>
+        <Route path='/reservation' element={<Reservations/>}/>
+        <Route path='/order' element={<Order/>}/>
+        <Route path='/login' element={<Login/>}/>
+      </Routes>
     </div>
   );
 }
