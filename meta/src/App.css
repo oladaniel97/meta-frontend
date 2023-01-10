@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&display=swap');
 .App {
   margin: 0;
   padding: 0;
@@ -15,22 +16,121 @@ li{
 .navbar{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .navlinks{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.navlinks li{
-  padding-right: 1rem;
+  flex-wrap: wrap;
+  column-gap: 2rem;
 }
 
 .logo{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f3f8f7;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  font-size: 20px;
+  line-height: 2rem;
 }
 .logo ul{
   padding-right:1rem;
+}
+
+.logo img{
+  width: 15rem;
+}
+
+.hero{
+  background-color: #495e57;
+}
+
+.hero img{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+}
+
+
+
+.inner{
+  display: flex;
+  justify-content: center;
+  column-gap: 10rem;
+  position: relative;
+}
+
+.left{
+  width:15rem;
+  line-height: 1rem;
+}
+.left p{
+  color: antiquewhite;
+  font-weight: 500;
+}
+
+button{
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #f4ce14;
+  }
+
+.lemon{
+  color: #f4ce14;
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+}
+.p{
+  font-size: 24px;
+}
+
+.top{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Markazi Text', serif;
+}
+
+.top h2{
+  font-size: 40px;
+}
+
+.top button{
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+}
+
+.booking{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  width: 25rem;
+}
+.form input,select{
+  width: 95%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+.book{
+  text-align: center;
+  color: #f4ce14;
 }

@@ -7,6 +7,7 @@ import Menu from './menu';
 import Reservations from './reservation';
 import Order from './order';
 import Login from './login';
+import BookingPage from './bookingpage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/reservation' element={<Reservations/>}/>
         <Route path='/order' element={<Order/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/bookingpage' element={<BookingPage/>}/>
       </Routes>
     </div>
   );
