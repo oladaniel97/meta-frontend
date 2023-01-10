@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useEffect ,useState } from 'react'
 
 function BookingForms() {
   const [date,SetDate] = useState("date");
@@ -8,8 +8,13 @@ function BookingForms() {
   ,{label:'19:00',value:'19:00'},{label:'20:00',value:'20:00'},{label:'21:00',value:'21:00'}
   ,{label:'22:00',value:'22:00'}];
 
-  const [times,SetTimes] = useState('17:00')
-
+  const [times,SetTimes] = useState('17:00');
+  const FetchData= ()=>{
+    fetch('https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js')
+    .then(response=>response.json())
+    .then(data=>SetTimes(data));
+  }
+  useEffect(() => {FetchData();},[])
 
   const handleSubmit = (e)=>{e.preventDefault();
   SetDate("");
